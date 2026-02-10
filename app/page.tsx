@@ -1,5 +1,38 @@
+"use client";
 import { Github, Linkedin, Mail, Instagram} from "lucide-react";
 import Link from "next/link";
+import { DM_Sans, Geist, Geist_Mono,Inter, Nunito} from "next/font/google";
+
+
+
+
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  weight: ["600", "700"],
+});
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
+const nunito = Nunito({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
+
+
 
 
 export default function Home() {
@@ -25,7 +58,7 @@ export default function Home() {
             </li>
             <li>
               <Link 
-                href="/projects" 
+                href="/about" 
                 className="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-medium"
               >
                 About
@@ -33,7 +66,7 @@ export default function Home() {
             </li>
             <li>
               <Link 
-                href="/writing" 
+                href="/experience" 
                 className="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-medium"
               >
                 Experience
@@ -41,25 +74,25 @@ export default function Home() {
             </li>
             <li>
               <Link 
-                href="/about" 
+                href="/projects" 
                 className="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-medium"
               >
                 Projects
               </Link>
             </li>
             <li>
-              <Link 
-                href="/resume" 
+              <a
+                href="/resume.pdf" 
                 className="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-medium"
               >
                 Resume
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
       </nav>
       
-      <div className="max-w-5xl left-[5%] pl-30 pt-54 ">
+      <div className="max-w-5xl left-[5%] pl-30 pt-55 ">
         <div className="flex gap-[2%]  left ">
           <a 
             href="https://github.com/rozak-27" 
@@ -91,13 +124,18 @@ export default function Home() {
             <Mail className="w-6 h-6 text-gray-300" />
           </a>
         </div>
-        <div className="flex flex-col leading-[0.3]  ">
-          <div className="absolute bottom-[50%]  translate-x-10 left-[5%]">
+        <div className="flex flex-col leading-[0.8] mt-20 ">
+          <div className="absolute bottom-[37%]  translate-x-10 left-[5%]">
             <h1 className="text-[60px] font-bold text-white leading-tight ">
               Hi, I'm Rozak Limbong.
             </h1>
-             <p className="text-[24px] text-[#DBDBDB]  font-italy opacity-70" >
+             <p className={`${geistSans.className} text-[22px] text-[#70afdd]  font-bold opacity-95`} >
               Information System Undergraduate
+            </p>
+            <p className={`${nunito.className} text-[27px] text-[#DBDBDB]  font- opacity-100 pt-5` }>
+              Enjoys exploring data  <br/>
+              <br/>
+              and learning how insights are built from raw information.
             </p>
             </div>
           </div>
