@@ -1,9 +1,10 @@
 "use client";
 import { Github, Linkedin, Mail, Instagram} from "lucide-react";
 import Link from "next/link";
-import { DM_Sans, Geist, Geist_Mono,Inter, Nunito} from "next/font/google";
+import { DM_Sans, Geist, Geist_Mono,Inter, Nunito, Press_Start_2P} from "next/font/google";
+import PageWrapper from "./components/PageWrapper"
 
-
+console.log(typeof PageWrapper)
 
 
 const dmSans = DM_Sans({
@@ -31,19 +32,17 @@ const nunito = Nunito({
   weight: ["400", "500", "600", "700"],
 });
 
-
-
+const pressStart = Press_Start_2P({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-press-start",
+});
 
 
 export default function Home() {
   return (
-    <div className="min-h-screen w-full bg-gradient-to-br from-slate-950 via-blue-950 to-slate-950 ">
-      {/*gif*/}
-         <img
-         src="/lero.gif"
-         alt="Lero Lero Cat"
-         className=" absolute w-143  pt-64 right-9.5"
-          />
+    <div className="min-h-screen w-full bg-linear-to-br from-slate-950 via-blue-950 to-slate-950 relative ">
+      
        {/* Navbar */}
       <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-50 pt-10" >
         <div className="bg-gray-900/80 backdrop-blur-md border border-gray-800 rounded-full px-8 py-4 shadow-xl">
@@ -91,9 +90,19 @@ export default function Home() {
           </ul>
         </div>
       </nav>
-      
-      <div className="max-w-5xl left-[5%] pl-30 pt-55 ">
-        <div className="flex gap-[2%]  left ">
+
+    <PageWrapper>
+      {/*gif*/}
+         <img
+         src="/lero.gif"
+         alt="Lero Lero Cat"
+         className=" absolute w-143   left-[115%] bottom-[-10%]"
+          />
+
+      {/*Componen*/}
+    
+      <div className="max-w-5xl ml-[5%] ">
+        <div className="flex gap-4  ">
           <a 
             href="https://github.com/rozak-27" 
             target="_blank"
@@ -125,8 +134,8 @@ export default function Home() {
           </a>
         </div>
         <div className="flex flex-col leading-[0.8] mt-20 ">
-          <div className="absolute bottom-[37%]  translate-x-10 left-[5%]">
-            <h1 className="text-[60px] font-bold text-white leading-tight ">
+          <div className="pt-0 left-[5%]">
+            <h1 className="text-[66px] font-bold text-white leading-tight">
               Hi, I'm Rozak Limbong.
             </h1>
              <p className={`${geistSans.className} text-[22px] text-[#0f81de]  font-bold opacity-95`} >
@@ -140,6 +149,7 @@ export default function Home() {
             </div>
           </div>
       </div>
+      </PageWrapper>
     </div>
   );
 }
