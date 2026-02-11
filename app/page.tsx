@@ -129,7 +129,7 @@ export default function Home() {
             <h1 className="text-[60px] font-bold text-white leading-tight ">
               Hi, I'm Rozak Limbong.
             </h1>
-             <p className={`${geistSans.className} text-[22px] text-[#70afdd]  font-bold opacity-95`} >
+             <p className={`${geistSans.className} text-[22px] text-[#0f81de]  font-bold opacity-95`} >
               Information System Undergraduate
             </p>
             <p className={`${nunito.className} text-[27px] text-[#DBDBDB]  font- opacity-100 pt-5` }>

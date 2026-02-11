@@ -54,6 +54,9 @@ export default function ExperiencePage() {
       </nav>
 
       {/* Halaman kosong - nanti diisi */}
+      <p> 
+        COMING SOON
+      </p>
     </div>
   );
 }
