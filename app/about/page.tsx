@@ -59,10 +59,10 @@ export default function About() {
   <div className="flex flex-col md:flex-row items-start justify-between gap-16">
 
     {/* TEXT */}
-    <div className="md:w-1/2 text-white leading-relaxed text-base md:text-lg space-y-6 ml-18">
+    <div className="md:w-1/2 text-slate-300 leading-relaxed text-base md:text-lg space-y-6 ml-18 ">
       <p>
-        I’m Rozak Mulya Limbong, an Information Systems student at State University of Surabaya,
-        with a growing passion for data and analytical problem-solving.
+        I’m <span className="text-blue-400 font-semibold">Rozak Mulya Limbong</span> , an Information Systems student at State University of Surabaya,
+        with a growing passion for<span className="text-green-400 font-semibold"> data and analytical</span> problem-solving.
         I’m particularly interested in how data can reveal patterns, drive strategy,
         and create measurable impact through well-designed systems and analysis.
       </p>
@@ -70,8 +70,8 @@ export default function About() {
       <p>
         Throughout my academic journey, I’ve worked on various technical projects that
         strengthened my understanding of how systems and data interact. While I’ve had exposure
-        to frontend development and system implementation, my main focus has gradually
-        shifted toward data analysis, data modeling, and designing structured data workflows.
+        to frontend development and system implementation, <span className=" text-white text-bold  font-semibold">my main focus has gradually
+        shifted toward data analysis, data modeling, and designing structured data workflows.</span>
         I’m particularly interested in building solutions where data is not only collected,
         but meaningfully processed and transformed into insight.
       </p>

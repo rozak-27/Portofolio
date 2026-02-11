@@ -121,7 +121,7 @@ export default function Projects() {
                 <div className="p-6">
                   {/* Title & Links */}
                   <div className="flex items-start justify-between mb-3">
-                    <h3 className="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors">
+                    <h3 className="text-2xl font-bold text-white group-hover:text-green-400 transition-colors">
                       {project.title}
                     </h3>
                   <div className="flex gap-2">
