@@ -1,6 +1,9 @@
 'use client';
 
 import Link from 'next/link';
+import PageWrapper from "../components/PageWrapper"
+
+
 
 export default function About() {
   return (
@@ -55,10 +58,10 @@ export default function About() {
 
       {/* about */}
       {/* About Section */}
-<section className="pt-48 px-10 md:px-24">
-  <div className="flex flex-col md:flex-row items-start justify-between gap-16">
 
-    {/* TEXT */}
+<section className="pt-48 px-10 relative bottom-40">
+<PageWrapper>
+  <div className="flex flex-col md:flex-row items-start justify-between gap-16">
     <div className="md:w-1/2 text-slate-300 leading-relaxed text-base md:text-lg space-y-6 ml-18 ">
       <p>
         I’m <span className="text-blue-400 font-semibold">Rozak Mulya Limbong</span> , an Information Systems student at State University of Surabaya,
@@ -66,6 +69,7 @@ export default function About() {
         I’m particularly interested in how data can reveal patterns, drive strategy,
         and create measurable impact through well-designed systems and analysis.
       </p>
+    
 
       <p>
         Throughout my academic journey, I’ve worked on various technical projects that
@@ -82,7 +86,7 @@ export default function About() {
         while movies are simply my way to relax and unwind.
       </p>
     </div>
-
+ 
     {/* IMAGE */}
     <div className="md:w-1/2 flex justify-end pr-30">
       <img
@@ -93,9 +97,9 @@ export default function About() {
     </div>
 
   </div>
+ </PageWrapper>
+
 </section>
-
-
-    </div>
-  );
+</div>
+);
 }

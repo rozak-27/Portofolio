@@ -96,13 +96,13 @@ export default function Home() {
          <img
          src="/lero.gif"
          alt="Lero Lero Cat"
-         className=" absolute w-143   left-[115%] bottom-[-10%]"
+         className="w-143  relative left-140 relative top-38"
           />
 
       {/*Componen*/}
     
-      <div className="max-w-5xl ml-[5%] ">
-        <div className="flex gap-4  ">
+      <div className="max-w-5xl md:px-20  relative bottom-20 relative right-60">
+        <div className="flex gap-4 mb-12  ">
           <a 
             href="https://github.com/rozak-27" 
             target="_blank"
@@ -127,29 +127,29 @@ export default function Home() {
             <Instagram className="w-6 h-6 text-gray-300" />
           </a>
           <a 
-            href="jakskuy6@gmail.com"
+            href="mailto:jakskuy6@gmail.com"
             className="w-14 h-14 flex items-center justify-center rounded-2xl bg-slate-800/50 border border-slate-700/50 hover:bg-slate-700/50 transition-all duration-200"
           >
             <Mail className="w-6 h-6 text-gray-300" />
           </a>
         </div>
-        <div className="flex flex-col leading-[0.8] mt-20 ">
-          <div className="pt-0 left-[5%]">
-            <h1 className="text-[66px] font-bold text-white leading-tight">
+
+        {/* Text Content */}
+        <div className="relative bottom-10"> 
+            <h1 className="text-5xl md:text-6xl lg:text-[66px] font-bold text-white leading-tight mb-2">
               Hi, I'm Rozak Limbong.
             </h1>
-             <p className={`${geistSans.className} text-[22px] text-[#0f81de]  font-bold opacity-95`} >
+
+             <p className={`${geistSans.className} text-[22px] text-[#0f81de]  font-bold opacity-95 relative bottom-3` } >
               Information System Undergraduate
             </p>
-            <p className={`${nunito.className} text-[27px] text-[#DBDBDB]  font- opacity-100 pt-5` }>
+            <p className={`${nunito.className} text-[27px] text-[#DBDBDB]  font- opacity-100 pt-5 relative bottom-6` }>
               Enjoys exploring data  <br/>
-              <br/>
               and learning how insights are built from raw information.
             </p>
-            </div>
           </div>
-      </div>
-      </PageWrapper>
     </div>
+   </PageWrapper>
+   </div>
   );
 }

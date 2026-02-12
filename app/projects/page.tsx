@@ -1,9 +1,12 @@
 'use client';
 import Link from 'next/link';
 import { ExternalLink, Github } from 'lucide-react';
+import PageWrapper from "../components/PageWrapper"
+
 
 export default function Projects() {
   const projects = [
+ 
     {
       title: "Mini SQL Analysis Project #2",
       description: "Conducted a global COVID-19 data analysis in MySQL to calculate infection, death, and vaccination rates by country and continent. Combined death and vaccination datasets using JOIN and applied CTEs, Temporary Tables, and Views to compute rolling and cumulative vaccination percentages.",
@@ -41,10 +44,11 @@ export default function Projects() {
   ];
 
   return (
-    <div className="min-h-screen w-full bg-gradient-to-br from-slate-950 via-blue-950 to-slate-950">
+ 
+    <div className="min-h-screen w-full bg-gradient-to-br from-slate-950 via-blue-950 to-slate-950 flex flex-col">
       {/* Navbar */}
           <nav className="fixed top-6 left-[50%] -translate-x-1/2 z-50 pt-10" >
-        <div className="bg-gray-900/80 backdrop-blur-md border border-gray-800 rounded-full px-8 py-4 shadow-xl">
+        <div className="bg-gray-950 backdrop-blur-md border border-gray-800 rounded-full px-8 py-4 shadow-xl">
           <ul className="flex items-center gap-15">
             <li>
               <Link href="/"
@@ -91,7 +95,8 @@ export default function Projects() {
       </nav>
 
       {/* Content */}
-      <div className="px-6 md:px-16 py-20 pt-45">
+    <PageWrapper>
+      <div className="px-6 md:px-16 pt-36 pb-20">
         <div className="max-w-7xl mx-auto">
 
           {/* Projects Grid */}
@@ -172,6 +177,7 @@ export default function Projects() {
           </div>
         </div>
       </div>
+    </PageWrapper>
     </div>
   );
 }
