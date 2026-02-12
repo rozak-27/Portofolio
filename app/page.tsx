@@ -94,7 +94,7 @@ export default function Home() {
     <PageWrapper>
       {/*gif*/}
          <img
-         src="/lero.gif"
+         src="/Lero.gif"
          alt="Lero Lero Cat"
          className="w-143  relative left-140 relative top-38"
           />
