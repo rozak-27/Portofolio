@@ -6,7 +6,16 @@ import PageWrapper from "../components/PageWrapper"
 
 export default function Projects() {
   const projects = [
- 
+    
+   {
+      title: "Weather app",
+      description: "Weather forecasting app built with Next.js, TypeScript, and BMKG API, featuring interactive charts and real-time weather data for Indonesian cities.",
+      tags: ["Next js","React", "Rest API", "Fetch API", "TypeScript", "Tailwind CSS",],
+      github: "https://github.com/rozak-27/Wheater-app1",
+      demo :"https://wheater-app-brown.vercel.app/",
+      image:"Weather.png"
+      
+    },
     {
       title: "Mini SQL Analysis Project #2",
       description: "Conducted a global COVID-19 data analysis in MySQL to calculate infection, death, and vaccination rates by country and continent. Combined death and vaccination datasets using JOIN and applied CTEs, Temporary Tables, and Views to compute rolling and cumulative vaccination percentages.",
@@ -47,8 +56,8 @@ export default function Projects() {
  
     <div className="min-h-screen w-full bg-gradient-to-br from-slate-950 via-blue-950 to-slate-950 relative flex flex-col">
       {/* Navbar */}
-          <nav className="fixed top-6 left-[50%] -translate-x-1/2 z-50 pt-10" >
-      <div className="bg-gray-900/80 backdrop-blur-md border border-gray-800 rounded-full px-8 py-4 shadow-xl">
+ <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-50 pt-10" >
+        <div className="bg-gray-900/80 backdrop-blur-md border border-gray-800 rounded-full px-8 py-4 shadow-xl">
           <ul className="flex items-center gap-15">
             <li>
               <Link href="/"
@@ -93,7 +102,6 @@ export default function Projects() {
           </ul>
         </div>
       </nav>
-
       {/* Content */}
     <PageWrapper>
       <div className="px-6 md:px-16 pt-36 pb-20">
