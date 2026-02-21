@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-
-
-
+import BoxesBackground from "./components/ui/boxes-background";
 
 export const metadata: Metadata = {
   title: "Rozak's Portofolio",
@@ -17,9 +15,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-  
-       {children}
-      
+        <div className="min-h-screen w-full bg-black relative">
+          <div className="fixed inset-0 z-0">
+          <BoxesBackground />
+          </div>
+          <div className="relative z-20">
+            {children}
+          </div>
+        </div>
       </body>
     </html>
   );

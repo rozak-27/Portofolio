@@ -7,6 +7,7 @@ import { FlipWords } from "./components/ui/flip-words";
 import Lottie from "lottie-react";
 import animationData from "@/public/animation.json";
 
+
 console.log(typeof PageWrapper)
 
 
@@ -44,7 +45,7 @@ const pressStart = Press_Start_2P({
 
 export default function Home() {
   return (
-    <div className="min-h-screen w-full bg-linear-to-br from-slate-900 from-slate-950 to-slate-950 relative ">
+    <div className="min-h-screen w-full relative ">
       
        {/* Navbar */}
       <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-50 pt-10" >

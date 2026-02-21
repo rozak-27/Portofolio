@@ -3,12 +3,12 @@
 
 /* 1. Paksa root dan body agar tidak bisa jadi putih */
 :root {
-  background-color: #020617 !important;
+  background-color: #01040f !important;
   color-scheme: dark;
 }
 
 body {
-  background-color: #020617 !important; /* Slate-950 */
+  background-color: #000105 !important; /* Slate-950 */
   margin: 0;
   padding: 0;
   min-height: 100vh;
@@ -31,9 +31,7 @@ body {
    font-family: "DM Sans", sans-serif;
 }
 
-html {
-  overflow-y: scroll;
-}
+
 
 /* Hilangkan scrollbar tapi tetap bisa scroll */
 * {

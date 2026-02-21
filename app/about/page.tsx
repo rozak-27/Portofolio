@@ -7,7 +7,7 @@ import PageWrapper from "../components/PageWrapper"
 
 export default function About() {
   return (
-    <div className="min-h-screen w-full bg-gradient-to-br from-slate-950 from-slate-950 to-slate-950">
+    <div className="min-h-screen w-full relative">
       {/* Navbar */}
        <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-50 pt-10" >
         <div className="bg-gray-900/80 backdrop-blur-md border border-gray-800 rounded-full px-8 py-4 shadow-xl">
