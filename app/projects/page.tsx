@@ -36,7 +36,7 @@ export default function Projects() {
       
     },
     {
-      title: "Customer & Operational Insights from 100K+ E-Commerce Orders",
+      title: "Brazilian E-Commerce Sales Analysis",
       description: "Analyzed 100,000+ Brazilian e-commerce orders using SQL to uncover customer and operational insights. Explored order trends, seasonality, payments, freight, and delivery performance across states to support data-driven decisions.",
       tags: ["MY SQL", "GBQ"],
       github: "https://github.com/rozak-27/Brazilian-E-commerce-Data-Exploration-Insights-with-SQL",
