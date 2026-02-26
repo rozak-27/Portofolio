@@ -7,17 +7,28 @@ import PageWrapper from "../components/PageWrapper"
 export default function Projects() {
   const projects = [
     
+
+   {
+      title: "Snap news",
+      description: "That was my first project with Gemini AI, where I built NewsSnap, a simple web app that turns real-time news into quick and easy-to-read insights. It pulls headlines from a public API and uses Gemini to generate summaries, simplified explanations, and short analysis of the news.",
+      tags: ["Next js", "TypeScript", "Tailwind CSS", "GeminiAPI", "NewsAPI", ],
+      github: "https://github.com/rozak-27/News-Snap",
+      demo :"https://news-snap-zeta.vercel.app/",
+      image:"Snap.png"
+      
+    },
+
    {
       title: "Weather app",
       description: "Weather forecasting app built with Next.js, TypeScript, and BMKG API, featuring interactive charts and real-time weather data for Indonesian cities.",
-      tags: ["Next js","React", "Rest API", "Fetch API", "TypeScript", "Tailwind CSS",],
+      tags: ["Next js", "Rest API", "TypeScript", "Tailwind CSS",],
       github: "https://github.com/rozak-27/Wheater-app1",
       demo :"https://wheater-app-brown.vercel.app/",
       image:"Weather.png"
       
     },
     {
-      title: "Mini SQL Analysis Project #2",
+      title: "Exploratory Data Analysis on Global COVID-19 Trends",
       description: "Conducted a global COVID-19 data analysis in MySQL to calculate infection, death, and vaccination rates by country and continent. Combined death and vaccination datasets using JOIN and applied CTEs, Temporary Tables, and Views to compute rolling and cumulative vaccination percentages.",
       tags: ["My SQL", "MS Excel"],
       github: "https://github.com/rozak-27/Mini-SQL-Analysis-Project",
@@ -25,7 +36,7 @@ export default function Projects() {
       
     },
     {
-      title: "Mini SQL Analysis Project #1",
+      title: "Customer & Operational Insights from 100K+ E-Commerce Orders",
       description: "Analyzed 100,000+ Brazilian e-commerce orders using SQL to uncover customer and operational insights. Explored order trends, seasonality, payments, freight, and delivery performance across states to support data-driven decisions.",
       tags: ["MY SQL", "GBQ"],
       github: "https://github.com/rozak-27/Brazilian-E-commerce-Data-Exploration-Insights-with-SQL",
