@@ -28,10 +28,11 @@ export default function Projects() {
       
     },
     {
-      title: "Exploratory Data Analysis on Global COVID-19 Trends",
-      description: "Conducted a global COVID-19 data analysis in MySQL to calculate infection, death, and vaccination rates by country and continent. Combined death and vaccination datasets using JOIN and applied CTEs, Temporary Tables, and Views to compute rolling and cumulative vaccination percentages.",
-      tags: ["My SQL", "MS Excel"],
+      title: "Global COVID-19 Analytics Dashboard",
+      description: "I built an interactive Global COVID-19 Dashboard using SQL Server, Excel, and Tableau to transform raw pandemic data into meaningful insights. I performed data cleaning, KPI calculations (Total Cases, Death Percentage, Percent Population Infected), and designed visualizations including trend analysis, continent comparisons, and a world map view.",
+      tags: ["My SQL", "MS Excel","Tableau",],
       github: "https://github.com/rozak-27/Mini-SQL-Analysis-Project",
+      demo:"https://public.tableau.com/app/profile/rozak.limbong/viz/CovidPortofolioDashboard/Dashboard1",
       image:"Covid.png"
       
     },
