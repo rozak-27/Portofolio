@@ -11,7 +11,7 @@ export default function Projects() {
       title: "Meta ad Performance Dashboard",
       description: "I built a responsive Meta Ad Performance Dashboard in Power BI to analyze campaign performance across Facebook and Instagram. It features interactive filters, KPI cards, demographic and geographic insights, and trend visualizations to help evaluate ad effectiveness and optimize marketing decisions.",
       tags: ["MS Excel", "Power BI", ],
-      github: "https://github.com/rozak-27/News-Snap",
+      github: null,
       demo :"https://drive.google.com/drive/folders/1o5FE5D1r1IBptgbYUYpA_kpXQCJRU6oW?usp=sharing",
       image:"Meta.png"
       
