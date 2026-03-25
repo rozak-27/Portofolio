@@ -7,6 +7,15 @@ import PageWrapper from "../components/PageWrapper"
 export default function Projects() {
   const projects = [
     
+   {
+      title: "Meta ad Performance Dashboard",
+      description: "I built a responsive Meta Ad Performance Dashboard in Power BI to analyze campaign performance across Facebook and Instagram. It features interactive filters, KPI cards, demographic and geographic insights, and trend visualizations to help evaluate ad effectiveness and optimize marketing decisions.",
+      tags: ["MS Excel", "Power BI", ],
+      github: "https://github.com/rozak-27/News-Snap",
+      demo :"https://drive.google.com/drive/folders/1o5FE5D1r1IBptgbYUYpA_kpXQCJRU6oW?usp=sharing",
+      image:"Meta.png"
+      
+    },
 
    {
       title: "Snap news",
@@ -36,14 +45,7 @@ export default function Projects() {
       image:"Covid.png"
       
     },
-    {
-      title: "Brazilian E-Commerce Sales Analysis",
-      description: "Analyzed 100,000+ Brazilian e-commerce orders using SQL to uncover customer and operational insights. Explored order trends, seasonality, payments, freight, and delivery performance across states to support data-driven decisions.",
-      tags: ["MY SQL", "GBQ"],
-      github: "https://github.com/rozak-27/Brazilian-E-commerce-Data-Exploration-Insights-with-SQL",
-      demo: null,
-      image:"Analysis1.jpg"
-    },
+   
     {
       title: "Nesa News",
       description: "A campus news web application that allows users to read and publish articles related to university activities and events. The platform includes user authentication and an admin dashboard for managing content efficiently.",
@@ -58,9 +60,18 @@ export default function Projects() {
       description: "Completed an intensive Excel data analytics program @ MY SKILL that covering advanced formulas, data cleaning, pivot tables, Power Pivot modeling, and VBA automation. Developed interactive dashboards and automated reporting workflows using real-world datasets..",
       tags: ["MS Excel"],
       demo: "https://drive.google.com/file/d/1lDvSRjSuvWZmtDsUZTzPpvM73SoZTygU/view?usp=sharing",
-      image: "/Excel.png"
+      image: "Excel.png"
       
      
+    },
+
+    {
+      title: "Brazilian E-Commerce Sales Analysis",
+      description: "Analyzed 100,000+ Brazilian e-commerce orders using SQL to uncover customer and operational insights. Explored order trends, seasonality, payments, freight, and delivery performance across states to support data-driven decisions.",
+      tags: ["MY SQL", "GBQ"],
+      github: "https://github.com/rozak-27/Brazilian-E-commerce-Data-Exploration-Insights-with-SQL",
+      demo: null,
+      image:"Analysis1.jpg"
     }
   ];
 
