@@ -6,7 +6,17 @@ import PageWrapper from "../components/PageWrapper"
 
 export default function Projects() {
   const projects = [
-    
+
+    {
+      title: "Heart Disease Classification Using Ensemble Learning Methods",
+      description: "Implemented 8 ensemble learning methods (Bagging, Random Forest, AdaBoost, Gradient Boosting, Hist GB, Extra Trees, Stacking, Voting) for heart disease classification. ",
+      tags: ["Python", "Scikit-learn", "Pandas", "Numpy", "Matplotlib"],
+      github:"https://github.com/rozak-27/Heart-Disease-Prediction-Machine-Learning-Model-Comparison",
+      demo :null,
+      image:"ML.png"
+      
+    },
+
    {
       title: "Meta ad Performance Dashboard",
       description: "I built a responsive Meta Ad Performance Dashboard in Power BI to analyze campaign performance across Facebook and Instagram. It features interactive filters, KPI cards, demographic and geographic insights, and trend visualizations to help evaluate ad effectiveness and optimize marketing decisions.",
