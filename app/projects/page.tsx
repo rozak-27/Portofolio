@@ -6,7 +6,16 @@ import PageWrapper from "../components/PageWrapper"
 
 export default function Projects() {
   const projects = [
-
+    
+    {
+      title: "Sentiment Analysis of YouTube Comments: Galaxy A57",
+      description: "A sentiment analysis project on YouTube comments to understand audience perception and engagement toward the Galaxy A57 review. ",
+      tags: ["Python", "IndoBERT", "Pandas", "YtData API", "Matplotlib","Transformers"],
+      github:"https://github.com/rozak-27/Sentiment-Analysis-of-YouTube-Comments-Galaxy-A57",
+      demo :null,
+      image:"yt.png"
+      
+    },
     {
       title: "Heart Disease Classification Using Ensemble Learning Methods",
       description: "Implemented 8 ensemble learning methods (Bagging, Random Forest, AdaBoost, Gradient Boosting, Hist GB, Extra Trees, Stacking, Voting) for heart disease classification. ",
