@@ -6,7 +6,15 @@ import PageWrapper from "../components/PageWrapper"
 
 export default function Projects() {
   const projects = [
-    
+    {
+      title: "End to End Business Intelligence Pipeline",
+      description: "This project demonstrates a complete Business Intelligence pipeline built to analyze Meta (Facebook & Instagram) ad campaign performance and sales transactions. Starting from raw CSV data, the pipeline covers database design, ETL processing, multidimensional OLAP modeling, and interactive dashboard visualization, simulating a real-world enterprise data engineering workflow.",
+      tags: ["Python","SQL", "SSMS", "SSIS", "SSAS", "Power BI"],
+      github:"https://github.com/rozak-27/End-to-End-Buasiness-Intelligence-Pipeline-Meta-Ads-Campaign-Transaction-Analytics",
+      demo :null,
+      image:"SSIS.png"
+      
+    },
     {
       title: "Sentiment Analysis of YouTube Comments: Galaxy A57",
       description: "A sentiment analysis project on YouTube comments to understand audience perception and engagement toward the Galaxy A57 review. ",
